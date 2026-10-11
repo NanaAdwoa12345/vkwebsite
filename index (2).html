@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vicky's Klothing | Custom-made dresses in Chantan, Lapaz</title>
+<meta name="description" content="Custom-made dresses, bespoke tailored outfits and fashion styling in Chantan, Lapaz, Accra. Order on WhatsApp.">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#d6176f; --pink-dark:#a80f55; --plum:#2a1220; --cream:#fbf6ee; --blush:#f6e3e8; --muted:#6d5560; --line:#e6d6d9;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--plum);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+header{position:sticky;top:0;z-index:10;background:rgba(251,246,238,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:1.5rem;font-weight:600}
+.brand img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+nav{display:flex;gap:22px;align-items:center;font-size:.95rem}
+nav a{text-decoration:none}
+nav a:hover{color:var(--pink)}
+
+.btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:999px;border:0;cursor:pointer;font-size:1rem;transition:background .2s}
+.btn:hover{background:var(--pink-dark)}
+.btn.ghost{background:transparent;color:var(--plum);border:2px solid var(--plum)}
+.btn.ghost:hover{background:var(--plum);color:#fff}
+.btn.sm{padding:8px 16px;font-size:.9rem}
+
+/* Hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.8rem,6.4vw,5.2rem);line-height:1;letter-spacing:-.01em}
+.hero h1 em{color:var(--pink);font-style:italic}
+.hero p{margin:22px 0 30px;max-width:30em;color:var(--muted);font-size:1.12rem}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img .main{border-radius:16px;height:auto;width:100%;box-shadow:14px 14px 0 var(--blush)}
+.hero-img .cap{margin-top:22px;font-size:.95rem;color:var(--muted);line-height:1.4}
+.hero-img .cap b{color:var(--plum);font-family:var(--serif);font-size:1.3rem;font-weight:600}
+.hero-img .cap a{color:var(--pink);font-weight:700}
+.hero-img .badge{position:absolute;left:-18px;bottom:28px;width:104px;height:104px;border-radius:50%;border:5px solid var(--cream);object-fit:cover}
+
+.founder-row{display:flex;align-items:center;gap:14px;margin-top:32px;text-decoration:none;font-size:.95rem;color:var(--muted);line-height:1.4}
+.founder-row img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--blush)}
+.founder-row b{color:var(--plum)}
+.founder-row:hover b{color:var(--pink)}
+/* Sections */
+section{padding:72px 0}
+h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.1;margin-bottom:14px}
+.lead{color:var(--muted);max-width:36em}
+.services{background:var(--plum);color:#fff}
+.services .lead{color:#dcc6cf}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
+.svc div{border-top:2px solid var(--pink);padding-top:16px}
+.svc h3{font-family:var(--serif);font-size:1.6rem;font-weight:600}
+.svc p{color:#dcc6cf;font-size:.98rem}
+
+/* Gallery */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:36px}
+.card{display:flex;flex-direction:column}
+.card .ph{overflow:hidden;border-radius:14px;aspect-ratio:3/4;background:var(--blush)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover img{transform:scale(1.04)}
+.card h3{font-family:var(--serif);font-size:1.45rem;font-weight:600;margin:14px 0 4px;line-height:1.2}
+.card p{color:var(--muted);font-size:.95rem;margin-bottom:14px;flex:1}
+.card .btn{align-self:flex-start}
+
+/* About */
+.about{background:var(--blush)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:52px;align-items:center}
+.about img{border-radius:16px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.about p{margin-bottom:14px;max-width:36em}
+.sig{font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--pink-dark)}
+
+/* Contact */
+.contact{text-align:center}
+.contact .lead{margin:0 auto 28px}
+.contact .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.meta{margin-top:30px;color:var(--muted);font-size:.98rem}
+.meta strong{color:var(--plum)}
+
+footer{background:var(--plum);color:#dcc6cf;text-align:center;padding:26px 0;font-size:.95rem}
+footer b{color:#fff}
+
+@media(max-width:860px){
+  nav a:not(.btn){display:none}
+  .hero .wrap,.about .wrap{grid-template-columns:1fr}
+  .hero-img{max-width:100%}
+  .grid,.svc{grid-template-columns:repeat(2,1fr)}
+  }
+@media(max-width:560px){
+  .grid,.svc{grid-template-columns:1fr}
+  section{padding:56px 0}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="images/logo.jpg" alt="Vicky's Klothing logo">Vicky's Klothing</a>
+    <nav>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn sm" data-wa="Hello Vicky's Klothing, I'd like to place an order." href="#">Order on WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Dresses made for <em>your</em> measurements.</h1>
+        <p>Custom-made dresses, bespoke tailored outfits and fashion styling from our studio in Chantan, Lapaz. Tell us the occasion, and we'll sew something that fits you and your style.</p>
+        <div class="cta">
+          <a class="btn" data-wa="Hello Vicky's Klothing, I'd like to place an order." href="#">Order on WhatsApp</a>
+          <a class="btn ghost" href="#collection">See the collection</a>
+        </div>
+        <a class="founder-row" href="#about">
+          <img src="images/founder.jpg" alt="Victoria Dadzie">
+          <span><b>Founded by Victoria Dadzie</b><br>Chantan, Lapaz &middot; Meet the founder</span>
+        </a>
+      </div>
+      <div class="hero-img">
+        <img class="main" src="images/red-set.jpg" alt="Red sparkle mini dress and red sparkle two-piece set with draped skirt">
+        <p class="cap"><b>Red sparkle for celebrations</b><br>Made to your measurements. <a data-wa="Hello Vicky's Klothing, I'm interested in the red sparkle styles." href="#">Ask about these</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <img loading="lazy" src="images/founder.jpg" alt="Victoria Dadzie, founder of Vicky's Klothing">
+      <div>
+        <h2>Meet the founder</h2>
+        <p>Vicky's Klothing was founded by Victoria Dadzie and is based in Chantan, Lapaz. We specialise in high-quality custom-made clothing tailored precisely to your figure and personal style.</p>
+        <p>Whether you need an eye-catching outfit for a celebration, a chic modern dress, or a custom batik or print ensemble, our designs combine craftsmanship with contemporary aesthetics.</p>
+        <p class="sig">Victoria Dadzie</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="wrap">
+      <h2>What we make</h2>
+      <p class="lead">Fashion is an expression of individuality, confidence and elegance. Every piece is cut and finished to your figure.</p>
+      <div class="svc">
+        <div><h3>Custom-made dresses</h3><p>Evening glamour, modern day dresses and special-occasion looks, made from your measurements.</p></div>
+        <div><h3>Bespoke tailored outfits</h3><p>Two-piece sets, wide-leg trousers and structured tops in batik, tie-dye and African wax print.</p></div>
+        <div><h3>Fashion styling</h3><p>Not sure what to wear? We'll help you choose the style, fabric and finish for your event.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection">
+    <div class="wrap">
+      <h2>Featured collection</h2>
+      <p class="lead">Tap "Ask about this" to send us a WhatsApp message about the piece you like.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="ph"><img loading="lazy" src="images/emerald.jpg" alt="Emerald Textured Glamour Dress"></div>
+          <h3>Emerald Textured Glamour Dress</h3>
+          <p>Emerald green with lush textured ruffled sleeves, gold bead details across the bodice and a delicate fringed hemline. Ideal for high-profile events and evening glamour.</p>
+          <a class="btn sm" data-wa="Hello Vicky's Klothing, I'm interested in the Emerald Textured Glamour Dress." href="#">Ask about this</a>
+        </article>
+        <article class="card">
+          <div class="ph"><img loading="lazy" src="images/crimson.jpg" alt="Crimson Halter Fit-and-Flare Dress"></div>
+          <h3>Crimson Halter Fit-and-Flare Dress</h3>
+          <p>A bold crimson halter-neck mini dress with a structured, body-conforming bodice and a playful sculpted bubble skirt that adds movement.</p>
+          <a class="btn sm" data-wa="Hello Vicky's Klothing, I'm interested in the Crimson Halter Fit-and-Flare Dress." href="#">Ask about this</a>
+        </article>
+        <article class="card">
+          <div class="ph"><img loading="lazy" src="images/african-print.jpg" alt="Elegant African Print Puff-Sleeve Midi Dress"></div>
+          <h3>African Print Puff-Sleeve Midi Dress</h3>
+          <p>A tailored midi in vibrant African wax print with statement puff sleeves, a structured sweetheart neckline and a contoured fit that celebrates your silhouette.</p>
+          <a class="btn sm" data-wa="Hello Vicky's Klothing, I'm interested in the African Print Puff-Sleeve Midi Dress." href="#">Ask about this</a>
+        </article>
+        <article class="card">
+          <div class="ph"><img loading="lazy" src="images/batik-green.jpg" alt="Tropical Batik Halter Sun Dress"></div>
+          <h3>Tropical Batik Halter Sun Dress</h3>
+          <p>A chic, breezy green batik halter dress with a gathered, flattering ruched waist and high-neck tie. Perfect for casual luxury, weekend outings or vacation wear.</p>
+          <a class="btn sm" data-wa="Hello Vicky's Klothing, I'm interested in the Tropical Batik Halter Sun Dress." href="#">Ask about this</a>
+        </article>
+        <article class="card">
+          <div class="ph"><img loading="lazy" src="images/batik-pink.jpg" alt="Magenta Batik Backless Maxi Dress"></div>
+          <h3>Magenta Batik Backless Maxi Dress</h3>
+          <p>An effortless floor-length maxi in rich magenta tie-dye batik, with a soft halter neck and open-back design for a flowing, romantic silhouette.</p>
+          <a class="btn sm" data-wa="Hello Vicky's Klothing, I'm interested in the Magenta Batik Backless Maxi Dress." href="#">Ask about this</a>
+        </article>
+        <article class="card">
+          <div class="ph"><img loading="lazy" src="images/ocean-blue.jpg" alt="Ocean Blue Tie-Dye Two-Piece Set"></div>
+          <h3>Ocean Blue Tie-Dye Two-Piece Set</h3>
+          <p>High-waisted wide-leg trousers with a structured peplum halter top, in a striking ocean blue and white tie-dye print.</p>
+          <a class="btn sm" data-wa="Hello Vicky's Klothing, I'm interested in the Ocean Blue Tie-Dye Two-Piece Set." href="#">Ask about this</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Ready to order?</h2>
+      <p class="lead">Send us a message with the style you want and the date you need it. We'll reply with next steps for measurements.</p>
+      <div class="cta">
+        <a class="btn" data-wa="Hello Vicky's Klothing, I'd like to place an order." href="#">WhatsApp +233 020 022 1136</a>
+        <a class="btn ghost" href="https://instagram.com/vickyskloting" target="_blank" rel="noopener">Instagram @vickyskloting</a>
+      </div>
+      <p class="meta"><strong>Studio:</strong> Chantan, Lapaz<br>
+      <strong>Alternative number:</strong> <a href="tel:+233551433033">055 143 3033</a> (optional) &middot; <a data-wa2="Hello Vicky's Klothing, I'd like to place an order." href="#">WhatsApp this number</a></p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="yr">2026</span> Vicky's Klothing &middot; Made by <b>Mina</b></div></footer>
+
+<script>
+  // Main WhatsApp number (international format, no + or spaces)
+  var MAIN = "233200221136";
+  // Optional alternative number
+  var ALT = "233551433033";
+  function wa(num, msg){ return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg); }
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = wa(MAIN, a.dataset.wa); a.target = "_blank"; a.rel = "noopener";
+  });
+  document.querySelectorAll("[data-wa2]").forEach(function(a){
+    a.href = wa(ALT, a.dataset.wa2); a.target = "_blank"; a.rel = "noopener";
+  });
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
